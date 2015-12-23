@@ -1,0 +1,92 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+
+
+
+    <title>Email Me Form™ - HTML Forms, Web Forms, PHP Forms</title>
+    <meta name="description" content="EmailMeForm's online form builder helps you create beautiful web forms and online surveys. Collect order payments, leads, file uploads, registrations, &amp; applications.">
+    <meta name="keywords" content="online form builder, web form, html form, survey, surveys, application, payment, registration, free, email forms">
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen">
+   <script src="js/init.js"></script>
+   <script src="js/myInit.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="dashboard">
+  
+  <!-- Sidebar -->
+  
+  <!-- Workspace -->
+  <div class="workspace">
+    <div class="container-fluid">
+      
+      <!-- Meta -->
+     
+      <!-- Top bar -->
+      <div class="row bar-top">
+        <div class="col-xs-2">
+          <div class="folder-title"><i class="emfi emf-folder-open"></i> <span class="bright">Important Forms</span></div>
+        </div><!-- /.c-form -->
+        <div class="col-xs-10 text-right form-inline c-form">
+         <form class="form-inline" style="float: left;">
+            <div class="form-group" style="position: relative;">
+              <input type="text" class="form-control" id="inputSearchForm" placeholder="Title">
+               <div class="search_box" >
+              <ul>
+              </ul>
+            </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="searchFormTag" placeholder="Tag">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="searchFormCat" placeholder="Category">
+            </div>
+           <span id="serachForms" class="emfi emf-search"></span>
+          </form>  
+          
+          <div class="form-group">
+            <button id="btnChangeView" type="button" class="btn btn-transparent btn-tool info btn-md toggle-popover" role="button" data-content="LIST VIEW" data-original-title="" title="">
+              <i class="emfi emf-list2"></i>
+            </button>     
+            <div class="dropdown c-dropdown">
+              <button type="button" class="btn btn-transparent btn-tool info btn-md toggle-popover" role="button" id="dropdownSortForms" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-content="SORT FORMS" data-original-title="" title="">
+                <i class="emfi emf-sort"></i>
+              </button>      
+              <ul class="dropdown-menu" aria-labelledby="dropdownSortForms">
+                <li class="ucase h-list">Sort by</li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Date Created</a></li>
+                <li><a href="#">Date Edited</a></li>
+                <li><a href="#">Last Entry</a></li>
+                <li><a href="#">Form Title</a></li>
+              </ul>              
+            </div>
+            <button type="button" class="btn btn-warning btn-md ucase">Add Form</button>          
+          </div>         
+        </div><!-- /.buttons -->
+      </div><!-- /.bar-top -->
+      
+      <div class="scroll-container" style="height: 175px;">
+        <div  class="fheight dark " style="position: relative; overflow: visible;">      
+          <div id="forms_content" class="redrow s15 data-container">
+              
+            </div><!-- /.data-container -->  
+          <div id="search_content"></div>
+        </div></div><!-- /.fheight -->      
+      </div><!-- /.scroll-container -->
+    </div><!-- /.container-fluid -->
+  </div><!-- /.workspace -->
+
+</body>
